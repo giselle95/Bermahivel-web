@@ -1,0 +1,342 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #ffffff;
+    }
+    /*generales*/
+    
+    .titulo {
+        margin-bottom: 10px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+    
+    .contenedor {
+        max-width: 1600px;
+        margin: 0px auto;
+    }
+    
+    .listas ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .genero ul li {
+        list-style: none;
+    }
+    /*botones*/
+    
+    .boton {
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .boton a {
+        text-decoration: none;
+        color: #000000;
+        text-transform: uppercase;
+    }
+    
+    .botonprimario {
+        background-color: orange;
+    }
+    
+    .botonprimario:hover {
+        background-color: #f6e0b5;
+        color: #66545e;
+    }
+    
+    .botonsecundario {
+        background-color: #eea990;
+        width: 20%;
+    }
+    
+    .botonsecundario:hover {
+        background-color: #aa6f73;
+        color: #ffffff;
+    }
+    /*header*/
+    
+    header {
+        background-color: black;
+    }
+    /*categorias y descuentos*/
+    
+    .categorias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .categorias img {
+        width: 30%;
+        margin: 10px;
+        flex: 0 0 30%;
+    }
+    
+    .elemento img:hover {
+        transform: scale(1.2, 1);
+    }
+    
+    .categorias p {
+        flex: 0 0 60%;
+        margin-bottom: 30px;
+    }
+    
+    @media(max-width: 768px) {
+        .categorias img {
+            flex: 0 0 100%;
+        }
+    }
+    /*footer*/
+    
+    footer {
+        background-color: black;
+        padding: 20px;
+        margin: 0px;
+    }
+    
+    .final {
+        display: flex;
+    }
+    
+    .red {
+        flex: 0 0 50%;
+    }
+    
+    .informacion {
+        flex: 0 0 50%;
+    }
+    
+    .informacion p {
+        display: inline-block;
+        color: #ffffff;
+        float: right;
+        margin: 30px;
+    }
+    /*productos*/
+    
+    .general {
+        display: flex;
+        margin: 20px 0 20px 0;
+    }
+    
+    aside {
+        flex: 0 0 10%;
+        display: block;
+        font-size: 25px;
+        border: #000000 2px solid;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+    
+    aside ul li a {
+        color: #000000;
+        text-decoration: none;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+    
+    aside ul li a:hover {
+        background-color: #eea990;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    .genero {
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    .genero-movil {
+        display: none;
+    }
+    
+    @media(max-width:768px) {
+        .genero {
+            display: none;
+        }
+        .genero-movil {
+            display: block;
+        }
+        .genero-movil ul li ul {
+            display: none;
+        }
+        .genero-movil>ul>li:hover>ul {
+            display: block;
+        }
+        aside {
+            margin: 10px;
+            border: #000000 0px solid;
+        }
+    }
+    
+    .lista-productos {
+        flex: 0 0 70%;
+    }
+    
+    .productos {
+        display: grid;
+        justify-content: repeat (2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+    @media(min-width:768px) {
+        .productos {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    @media(max-width:768px) {
+        .general {
+            display: block;
+        }
+        aside {
+            display: none;
+        }
+        .productos {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 10px;
+        }
+    }
+    
+    .descripcion {
+        padding: 10px;
+    }
+    
+    .descripcion span {
+        font-size: 20px;
+        color: red;
+    }
+    
+    .producto {
+        border: gray 2px solid;
+    }
+    
+    .search {
+        margin-top: 30px;
+        height: 35px;
+        border-radius: 5px;
+        border-color: #000000;
+    }
+    
+    .btn {
+        margin: 30px 30px 0 20px;
+    }
+    /*blog*/
+    
+    .articulo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    
+    .articulo img {
+        width: 20%;
+        margin: 10px;
+        flex: 0 0 30%;
+    }
+    
+    .articulo .descripcionart {
+        flex: 0 0 50%;
+    }
+    
+    .descripcionart p {
+        margin-top: 10px;
+    }
+    
+    .publicacion {
+        color: gray;
+    }
+    
+    @media(max-width:768px) {
+        .articulo {
+            display: block;
+        }
+        .articulo img {
+            width: 100%;
+            margin: auto;
+        }
+        .botonsecundario {
+            width: 100%;
+        }
+    }
+    /*ingresar*/
+    
+    .formularios label {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    input {
+        font-size: 20px;
+        border: gray 2px solid;
+        margin: 10px;
+        width: 30%;
+    }
+    
+    .campo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .campo label {
+        flex: 0 0 30%;
+    }
+    
+    .boton input {
+        font-size: 20px;
+        background-color: orange;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .boton input:hover {
+        background-color: #f6e0b5;
+    }
+    
+    @media(max-width:768px) {
+        .formularios {
+            display: block;
+        }
+    }
+    /*boostrap*/
+    
+    .modal-body img {
+        width: 100%;
+    }
+    
+    .btn-default {
+        background-color: orange;
+    }
