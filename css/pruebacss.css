@@ -68,9 +68,16 @@ body {
     .header__barra__menu__lista {
         display: none;
     }
+     ul.header__barra__menu__nav-item>li:hover ul.items {
+        display: block;
+        max-width: 100px;
+    }
     .header__barra__menu__menu-bar {
         display: flex;
         margin: 10px;
+    }
+    .header__barra__menu__nav-item ul {
+        display: none;
     }
     .header__barra__menu__menu-bar i {
         font-size: 30px;
@@ -87,6 +94,9 @@ ul {
 
 .header__barra__menu__nav-item i {
     color: #ffffff;
+}
+.header__barra__logo {
+    max-height: 65px;
 }
 
 .header__barra__logo a {
