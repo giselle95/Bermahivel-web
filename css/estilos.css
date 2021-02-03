@@ -1,10 +1,14 @@
-    * {
+      * {
         margin: 0;
         padding: 0;
     }
     
     body {
         background-color: #ffffff;
+    }
+    
+    html {
+        font-size: 62.5%;
     }
     /*generales*/
     
@@ -36,7 +40,7 @@
     }
     
     .contenedor {
-        max-width: 1600px;
+        max-width: 1200px;
         margin: 0px auto;
     }
     
@@ -55,6 +59,10 @@
         text-align: center;
         border-radius: 5px;
         margin-top: 20px;
+    }
+    
+    .botonform {
+        max-width: 100px;
     }
     
     .boton a {
@@ -164,7 +172,8 @@
     }
     
     aside ul li a:hover {
-        background-color: #eea990;
+        background-color: #aa6f73;
+        color: #ffffff;
         padding: 5px;
         border-radius: 5px;
         text-decoration: none;
@@ -299,31 +308,46 @@
     }
     
     input {
-        font-size: 20px;
         border: gray 2px solid;
         margin: 10px;
-        width: 30%;
+        text-align: center;
+    }
+    
+    .formulario {
+        display: block;
+        text-align: center;
+    }
+    
+    .formulario>input {
+        background-color: orange;
+        padding: 10px;
+        border-radius: 10px;
+        color: black;
+        font-weight: 400;
+    }
+    
+    .formulario>input:hover {
+        background-color: #f6e0b5;
+        color: #66545e;
     }
     
     .campo {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     
     .campo label {
-        flex: 0 0 30%;
+        flex: 0 0 20%;
     }
     
-    .boton input {
-        font-size: 20px;
-        background-color: orange;
-        padding: 10px;
-        border-radius: 5px;
+    .formularios {
+        display: block;
     }
     
-    .boton input:hover {
-        background-color: #f6e0b5;
+    .registrarse h3 {
+        text-align: center;
     }
     
     @media(max-width:768px) {
